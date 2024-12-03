@@ -1,0 +1,196 @@
+:root{
+    --black:#202124;
+    --white:#eef0ff;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--black);
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+}
+
+header nav{
+    display: flex;
+    justify-content: flex-end;
+}
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+nav .nav-right-section a{
+    margin-right: 10px;
+    color: var(--white);
+    
+}
+nav .nav-right-section .menu-icon{
+    background-image: url(./icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    left: 7px;
+}
+nav .nav-right-section .img-container{
+    background-color: aquamarine;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 20px;
+    border-radius: 50%;
+}
+nav .nav-right-section img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-left: 10px;
+    position: relative;
+    right: 8px;
+    top: 2px;
+    border: 2.5px solid var(--black);
+}
+main{
+    margin-top: 150px;
+    text-align: center;
+}
+
+main .main-logo{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+main .main-logo img{
+    width: 500px;
+}
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+main .main-input-container{
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid #35373c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4d5156;
+}
+main .main-input input{
+    width: 450px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--white);
+}
+main .main-input-container:hover{
+    background-color: #5f6368; 
+}
+main .main-input .search-icon{
+    background-image: url(/busqueda.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    margin-left: 1rem;
+    margin-right: 10px;
+}
+main .main-input .micro-icon{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/1432px-Google_mic.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+main .main-input .camera-icon{
+    background-image: url('https://static.vecteezy.com/system/resources/previews/028/766/357/non_2x/google-camera-lens-icon-symbol-free-png.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    margin-left: 17px;
+    margin-right: 1rem;
+}
+main .main-button{
+    width: 530px;
+    margin: 0 auto;
+
+}
+main .main-button div{
+    display: inline-block;
+}
+main .main-button button{
+    height: 36px;
+    background-color: #303134;
+    color: var(--white);
+    border: 1px solid var(--black);
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 0 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+main .main-button button:hover{
+    border: 1px solid #4d5156;
+}
+footer{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    color: #E8E8E8;
+    background-color: #171717;
+}
+footer .footer-place{
+    padding-left: 20px;
+    height: 60px;
+    font-size: 1rem;
+}
+footer .footer-container{
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    list-style: none;
+    font-size: 13px;
+    border-top: 2px solid var(--black);
+}
+footer .footer-container ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+footer .footer-container .footer-left{
+    justify-content: left;
+}
+footer .footer-container .footer-right{
+    justify-content: right;
+}
+footer ul li a{
+    margin: 10px;
+    color: #E8E8E8;
+}
